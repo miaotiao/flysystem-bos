@@ -1,0 +1,36 @@
+{
+    "name": "miaotiao/laravel-flysystem-bos",
+    "description": "Laravel flysystem adapter for Baidu Bos",
+    "type": "library",
+    "keywords": [
+        "flysystem",
+        "BaiduBos"
+    ],
+    "homepage": "https://github.com/miaotiao/laravel-flysystem-bos",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "miaotiao",
+            "email": "1397701721@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "league/flysystem": "^1.0.20"
+    },
+    "autoload": {
+        "psr-4": {
+            "Miaotiao\\Flysystem\\BaiduBos\\": "src/"
+        },
+        "files": [
+            "bin/BaiduBce.phar"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Miaotiao\\Flysystem\\BaiduBos\\FlysystemServiceProvider"
+            ]
+        }
+    }
+}
