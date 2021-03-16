@@ -1,6 +1,9 @@
 # laravel-flysystem-bos
 Laravel Flysystem adapter for Baidu Bos
 
+##  Usage
+config/filesystems.php
+
 ```
 'bos' => [
     'driver'  => 'bos',
